@@ -1,0 +1,29 @@
+body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.fruit-list {
+    box-sizing: border-box;
+    max-width: 400px;
+    margin: 0;
+    padding: 26px 18px;
+    list-style-position: inside;
+    background-color: #ee9bad;
+    color: #fff;
+}
+
+.fruit-list li {
+    padding-left: 9px;
+    background-color: #ac4e65;
+}
+
+.fruit-list li + li {
+    margin-top: 10px;
+}
+
+.fruit-list span {
+    display: inline-block;
+    padding: 8px 9px;
+    background-color: #9a3048;
+}
