@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+}
+
+.page {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+}
+
+.picture {
+    --size: min(220px, 65vw);
+    position: relative;
+    isolation: isolate;
+    width: var(--size);
+    height: var(--size);
+    margin: 0;
+}
+
+.photo,
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.photo {
+    z-index: 1;
+    border: 7px solid #eaeaea;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+.frame {
+    border: 7px solid #f4a9ab;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.frame-back {
+    z-index: 0;
+}
+
+.frame-front {
+    z-index: 2;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    pointer-events: none;
+}
