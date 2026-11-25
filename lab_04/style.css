@@ -1,0 +1,89 @@
+.page {
+    padding: 16px;
+    font-family: Arial, sans-serif;
+    color: #182a3b;
+}
+
+.adapter-card {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 240px;
+    padding: 14px;
+    border: 1px solid #ccd7e2;
+    border-radius: 12px;
+    background-color: #f5f8fc;
+}
+
+.adapter-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: contain;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.adapter-model {
+    margin: 14px 0 12px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.adapter-specs {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.spec-label {
+    font-size: 12px;
+    color: #465d71;
+}
+
+.spec-value {
+    margin: 0 0 8px;
+}
+
+.adapter-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.edit-button,
+.delete-button {
+    flex: 1;
+    padding: 7px 8px;
+    border: 1px solid currentColor;
+    border-radius: 6px;
+    background-color: #fff;
+    font: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 150ms, color 150ms, border-color 150ms;
+}
+
+.edit-button {
+    color: #1c5d99;
+}
+
+.delete-button {
+    color: #a32633;
+}
+
+.edit-button:hover,
+.edit-button:focus-visible {
+    border-color: #1c5d99;
+    background-color: #1c5d99;
+    color: #fff;
+}
+
+.delete-button:hover,
+.delete-button:focus-visible {
+    border-color: #a32633;
+    background-color: #a32633;
+    color: #fff;
+}
